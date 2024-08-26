@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.localgreengrocer.carrierCompletedController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-30.0" prefHeight="572.0" prefWidth="222.0" style="-fx-background-color: #6B8E23;">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="185.0" layoutX="23.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../completed/completed.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="264.0" text="Completed Deliveries" textFill="#1f1f1f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button onAction="#handlehomepageButton" layoutX="62.0" layoutY="495.0" mnemonicParsing="false" style="-fx-background-color: #808080; -fx-border-color: #008000;" text="Return Home Page">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="67.0" fitWidth="69.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../completed/return.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="234.0" layoutY="13.0" prefHeight="393.0" prefWidth="723.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Order ID" />
+          <TableColumn prefWidth="100.0" text="Product List" />
+            <TableColumn prefWidth="100.0" text="Customer Name" />
+            <TableColumn prefWidth="120.0" text="Customer Address" />
+            <TableColumn prefWidth="150.0" text="Total (Including V.A.T)" />
+            <TableColumn prefWidth="150.0" text="Requested Delivery Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

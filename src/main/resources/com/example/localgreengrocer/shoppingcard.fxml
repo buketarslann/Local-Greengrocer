@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.localgreengrocer.ShoppingCardController"
+>
+   <children>
+      <TableView fx:id="cartTable" layoutX="305.0" layoutY="20.0" prefHeight="421.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="productNameColumn" prefWidth="90.0" text="Product Name" />
+          <TableColumn fx:id="amountColumn" prefWidth="90.0" text="Amounts" />
+            <TableColumn prefWidth="90.0" text="Delivery Date" />
+            <TableColumn prefWidth="90.0" text="Delete" />
+            <TableColumn prefWidth="90.0" text="Add" />
+            <TableColumn prefWidth="90.0" text="Price" />
+            <TableColumn prefWidth="90.0" text="Total" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="543.0" prefWidth="296.0" style="-fx-background-color: FFD700;">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="169.0" layoutX="57.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../shoppingcart/shoppingcart.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="98.0" layoutY="207.0" text="Shopping Cart">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="82.0" layoutY="498.0" mnemonicParsing="false" style="-fx-background-color: #A9A9A9; -fx-border-color: #000000;" text="Return to Product Main Page">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="91.0" layoutX="18.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../shoppingcart/return.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="586.0" layoutY="470.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="355.0" style="-fx-background-color: #006400;" text="Checkout" textFill="#fff9f9">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

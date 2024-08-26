@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #067;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="6.0" layoutY="7.0" prefHeight="253.0" prefWidth="947.0" style="-fx-background-color: #F5F5F5;">
+        <columns>
+          <TableColumn prefWidth="160.0" text="Product Name" />
+          <TableColumn prefWidth="160.0" text="Type" />
+            <TableColumn prefWidth="160.0" text="Stock" />
+            <TableColumn prefWidth="160.0" text="Price" />
+            <TableColumn prefWidth="160.0" text="Status" />
+            <TableColumn prefWidth="160.0" text="Threshold" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="11.0" layoutY="290.0" prefHeight="193.0" prefWidth="941.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <MenuButton layoutX="471.0" layoutY="38.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="148.0" style="-fx-border-color: #067; -fx-background-color: transparent;" text="Choose Type...">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Vegetables" />
+                <MenuItem mnemonicParsing="false" text="Fruit" />
+              </items>
+            </MenuButton>
+            <MenuButton layoutX="471.0" layoutY="92.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="148.0" style="-fx-border-color: #067; -fx-background-color: transparent;" text="Choose Status...">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Available" />
+                <MenuItem mnemonicParsing="false" text="Threshold" />
+              </items>
+            </MenuButton>
+            <Button layoutX="705.0" layoutY="20.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="86.0" style="-fx-background-color: #067;" text="Add" textFill="#fbfafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="796.0" layoutY="20.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="86.0" style="-fx-background-color: #067;" text="Update" textAlignment="CENTER" textFill="#fbfafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="708.0" layoutY="94.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="175.0" style="-fx-background-color: #067;" text="Remove" textFill="#fbfafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField layoutX="32.0" layoutY="38.0" prefHeight="25.0" prefWidth="175.0" promptText="Product Id" />
+            <TextField layoutX="32.0" layoutY="100.0" prefHeight="25.0" prefWidth="175.0" promptText="Product Name" />
+            <TextField layoutX="235.0" layoutY="38.0" prefHeight="25.0" prefWidth="175.0" promptText="Stock" />
+            <TextField layoutX="235.0" layoutY="100.0" prefHeight="25.0" prefWidth="175.0" promptText="Price" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #067;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.localgreengrocer.signUpController">
+   <children>
+      <ImageView fitHeight="375.0" fitWidth="778.0" layoutX="174.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\arkaplan.png" />
+      </ImageView>
+      <Label layoutX="438.0" layoutY="94.0" text="Sign Up">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="262.0" layoutY="137.0" prefHeight="14.0" prefWidth="436.0" promptText="Name" />
+      <TextField fx:id="usernameField" layoutX="262.0" layoutY="180.0" prefHeight="14.0" prefWidth="436.0" promptText="Username" />
+      <TextField fx:id="passwordField" layoutX="262.0" layoutY="219.0" prefHeight="14.0" prefWidth="436.0" promptText="Password" />
+      <TextField fx:id="confirmPasswordField" layoutX="262.0" layoutY="258.0" prefHeight="14.0" prefWidth="436.0" promptText="Confirm Password" />
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="228.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\username.png" />
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="230.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\password.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="231.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\confirm_password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="228.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@confirm_password.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="roleField" layoutX="262.0" layoutY="297.0" prefHeight="14.0" prefWidth="436.0" promptText="Role" />
+      <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="228.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\username.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="262.0" layoutY="337.0" prefHeight="14.0" prefWidth="436.0" promptText="Address" />
+      <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="228.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PC\OneDrive\Masaüstü\signup\address.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="450.0" layoutY="390.0" mnemonicParsing="false" onAction="#testButton" text="Sign Up" />
+      <Label layoutX="368.0" layoutY="428.0" prefHeight="18.0" prefWidth="140.0" text="Already Have An Account?" />
+      <Button onAction="#signup" id="signup" layoutX="516.0" layoutY="426.0" lineSpacing="15.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="50.0" text="Log in">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="termsCheckBox" layoutX="343.0" layoutY="372.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="252.0" text="I accept the Terms of Use &amp; Privacy Policy" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.localgreengrocer.ownermainController">
+   <children>
+      <AnchorPane layoutX="219.0" prefHeight="540.0" prefWidth="507.0" style="-fx-background-color: #067;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="170.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../ownermain/owner.png" />
+               </image>
+            </ImageView>
+            <Button onAction="#handleaddproductButton" layoutX="105.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: #E0FFFF;" text="add/remove/update products" textAlignment="CENTER" />
+            <Button onAction="#handleemployeeButton" layoutX="105.0" layoutY="308.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: #E0FFFF;" text="employ/fire carrier" textAlignment="CENTER" />
+            <Button onAction="#handlechartButton" layoutX="105.0" layoutY="358.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: #E0FFFF;" text="view all orders" textAlignment="CENTER" />
+            <Button layoutX="105.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: #E0FFFF;" text="view reports" textAlignment="CENTER" />
+            <Text layoutX="160.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Owner" textAlignment="CENTER" wrappingWidth="168.5495147705078">
+               <font>
+                  <Font name="Calibri Bold" size="23.0" />
+               </font>
+            </Text>
+            <Button onAction="#ownerLogoutButton" layoutX="218.0" layoutY="492.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Log out" textFill="LIGHTCYAN" />
+            <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="182.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="182.0">
+               <image>
+                  <Image url="@../../../../../../../ownermain/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

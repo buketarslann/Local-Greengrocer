@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.localgreengrocer.loginController">
+   <left>
+      <AnchorPane prefHeight="540.0" prefWidth="359.0" style="-fx-background-color: #067;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="187.0" layoutX="86.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../login/greengrocer1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="119.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group 14 Greengrocer" textAlignment="CENTER" wrappingWidth="121.96807861328125">
+               <font>
+                  <Font name="NSimSun" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="540.0" prefWidth="440.0" style="-fx-background-color: transparent; -fx-border-color: #067; -fx-border-width: 0px 0px 2px 0px;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="passwordField" layoutX="61.0" layoutY="258.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #067; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="usernameField" layoutX="61.0" layoutY="215.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #067; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button id="handleLoginButton" layoutX="105.0" layoutY="317.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #067;" text="Login" textFill="WHITE" />
+            <Hyperlink layoutX="71.0" layoutY="476.0" prefWidth="140.0" text="Forgot your password?" />
+            <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="25.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../login/user1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="25.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="23.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../login/key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="113.0" layoutX="87.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../login/users.png" />
+               </image>
+            </ImageView>
+            <Text fill="#006677" layoutX="91.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Button id="signUpButton" layoutX="105.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleSignUpButton" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #067;" text="Sign Up" textFill="WHITE" />
+            <Hyperlink layoutX="53.0" layoutY="383.0" text="Not a member yet? Sign Up now!" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

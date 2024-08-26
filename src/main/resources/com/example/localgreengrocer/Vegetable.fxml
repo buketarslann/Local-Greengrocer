@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.localgreengrocer.VegetableController">
+   <children>
+      <Button onAction="#artichokeAdd" fx:id="artichokeAdd" layoutX="223.0" layoutY="114.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <TextField fx:id="artichokeKg" layoutX="152.0" layoutY="114.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="BroccoliKg" layoutX="330.0" layoutY="114.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="CarrotKg" layoutX="498.0" layoutY="114.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="DaikonKg" layoutX="677.0" layoutY="114.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="EggplantKg" layoutX="152.0" layoutY="267.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="FennelKg" layoutX="324.0" layoutY="267.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="GarlicKg" layoutX="494.0" layoutY="267.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="HorseradishKg" layoutX="671.0" layoutY="267.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="IcebergLettuceKg" layoutX="152.0" layoutY="420.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="jicamaKg" layoutX="316.0" layoutY="420.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="kaleKg" layoutX="494.0" layoutY="420.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <TextField fx:id="leekKg" layoutX="671.0" layoutY="420.0" prefHeight="10.0" prefWidth="61.0" promptText="         kg" />
+      <Button onAction="#broccoliAdd" fx:id="broccoliAdd" layoutX="402.0" layoutY="114.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#carrotAdd" fx:id="carrotAdd" layoutX="572.0" layoutY="114.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#daikonAdd" fx:id="daikonAdd" layoutX="748.0" layoutY="114.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#eggplantAdd" fx:id="eggplantAdd" layoutX="223.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#fennelAdd" fx:id="fennelAdd" layoutX="398.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#garlicAdd" fx:id="garlicAdd" layoutX="569.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#horseradishAdd" fx:id="horseradishAdd" layoutX="738.0" layoutY="267.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#IcebergLettuceAdd" fx:id="IcebergLettuceAdd" layoutX="223.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#jicamaAdd" fx:id="jicamaAdd" layoutX="383.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#kaleAdd" fx:id="kaleAdd" layoutX="559.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#leekAdd" fx:id="leekAdd" layoutX="738.0" layoutY="420.0" mnemonicParsing="false" style="-fx-background-color: #2F4F4F;" text="Add" textFill="WHITE" />
+      <Button onAction="#shoppingCart" fx:id="shoppingCart" layoutX="833.0" layoutY="19.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" style="-fx-background-color: #FFFF00;" text="Shopping Card" />
+      <Text layoutX="182.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artichoke" wrappingWidth="87.0" />
+      <Text layoutX="689.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leek" wrappingWidth="87.0" />
+      <Text layoutX="516.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kale" wrappingWidth="87.0" />
+      <Text layoutX="346.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jicama" wrappingWidth="87.0" />
+      <Text layoutX="170.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IcebergLettuce" wrappingWidth="87.0" />
+      <Text layoutX="686.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horseradish" wrappingWidth="87.0" />
+      <Text layoutX="524.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Garlic" wrappingWidth="87.0" />
+      <Text layoutX="354.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fennel" wrappingWidth="87.0" />
+      <Text layoutX="180.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eggplant" wrappingWidth="87.0" />
+      <Text layoutX="701.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daikon" wrappingWidth="87.0" />
+      <Text layoutX="524.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrot" wrappingWidth="87.0" />
+      <Text layoutX="346.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Broccoli" wrappingWidth="87.0" />
+      <ListView fx:id="VegetableListView" layoutX="6.0" prefHeight="200.0" prefWidth="140.0" />
+   </children>
+</AnchorPane>
